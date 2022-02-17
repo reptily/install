@@ -1,6 +1,6 @@
 A common facade for installing Linux OS software.
 
-##Installation:
+## Installation:
 Copy the file to the directory to run
 ```
 git clone git@github.com:reptily/install.git /tmp/install
@@ -12,7 +12,7 @@ set the rights
 chmod 755 ~/bin/install
 ```
 
-##Use
+## Use
 ```
 install firefox
 ```
