@@ -15,3 +15,7 @@ fi
 if test -f /usr/bin/yum; then
     sudo yum install $1
 fi
+
+if test -f /usr/bin/yay; then
+    yay -S $1
+fi
