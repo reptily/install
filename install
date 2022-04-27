@@ -1,21 +1,31 @@
 #!/bin/bash
 
-if test -f /usr/bin/apt-get; then
+if command -v apt-get &> /dev/null
+then
     sudo apt-get install $1
+    exit
 fi
 
-if test -f /usr/bin/zypper; then
+if command -v zypper &> /dev/null
+then
     sudo zypper install $1
+    exit
 fi
 
-if test -f /usr/bin/dnf; then
+if command -v dnf &> /dev/null
+then
     sudo dnf install $1
+    exit
 fi
 
-if test -f /usr/bin/yum; then
+if command -v yum &> /dev/null
+then
     sudo yum install $1
+    exit
 fi
 
-if test -f /usr/bin/yay; then
+if command -v yay &> /dev/null
+then
     sudo yay -S $1
+    exit
 fi
